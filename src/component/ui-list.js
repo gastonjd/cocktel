@@ -31,7 +31,7 @@ export const CardDetalle = (props) => {
     var result='';
     var cont = 1;
     for (var name in props.item) {
-      if((`${name}` === `strIngredient${cont}`) && (`${props.item[name]}` !== 'null')){
+      if((name === `strIngredient${cont}`) && (props.item[name] !== 'null')){
         result += `${props.item[name]}` + ',' ;
         cont = cont + 1;
       }

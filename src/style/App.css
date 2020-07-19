@@ -1,3 +1,18 @@
 .App {
   text-align: center;
 }
+.card{
+  border: 1px solid gray;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px;
+  margin:;
+  flex-direction: row;
+
+}
+.card img{
+  width: 150px;
+  height: 150px;
+  margin-right: 16px;
+}

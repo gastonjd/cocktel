@@ -7,11 +7,12 @@ import '../style/box-list.css'
 
 export const UI = (props)=>{
         
-        
+        let ban = false
+        if(props.cant>0){ban=true}
         return(
             
             <div className='box-list'>
-                <h3>Cantidad resultados:{props.cant}</h3>
+                {ban?<h3>Cantidad resultados:{props.cant}</h3>:<h3></h3>}
                 { props.itemResult?
                 props.itemResult.map((i)=>{
                 return(
